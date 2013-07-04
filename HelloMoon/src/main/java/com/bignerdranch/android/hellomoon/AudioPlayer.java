@@ -29,4 +29,12 @@ public class AudioPlayer {
         });
         mPlayer.start();
     }
+
+    public void pausePlayback() {
+        if (mPlayer.isPlaying()) {
+            mPlayer.pause();
+        } else {
+            mPlayer.start();
+        }
+    }
 }
